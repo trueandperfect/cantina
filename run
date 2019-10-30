@@ -1,0 +1,8 @@
+#!/bin/bash
+# John Bradshaw - Cantina Code Exercise
+
+echo "Welcome to the Cantina code Exercise!"
+
+export PYTHONIOENCODING=utf8
+curl -s 'https://raw.githubusercontent.com/trueandperfect/cantina/master/SystemViewController.json' | \
+    python -c "import sys, json; print json.load(sys.stdin)['identifier']"

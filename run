@@ -7,7 +7,7 @@ echo "Welcome to the Cantina code Exercise!"
 echo "Enter a value to search"
 
 read variable
-echo Ok, I will search for $variable
+echo "Ok, I will search for" $variable
 
 export PYTHONIOENCODING=utf8
 curl -s 'https://raw.githubusercontent.com/trueandperfect/cantina/master/SystemViewController.json' | \

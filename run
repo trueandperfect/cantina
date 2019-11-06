@@ -1,8 +1,12 @@
 #!/bin/bash
 # John Bradshaw - Cantina Code Exercise
 
+
+
 echo "Welcome to the Cantina code Exercise!"
+read variable
+echo Ok, I will search for $variable
 
 export PYTHONIOENCODING=utf8
 curl -s 'https://raw.githubusercontent.com/trueandperfect/cantina/master/SystemViewController.json' | \
-    python -c "import sys, json; print json.load(sys.stdin)['identifier']"
+python2 dataControler.py "$variable"
